@@ -27,8 +27,8 @@ public RobotMap() {
   RightVictor1 = new VictorSPX(3);
   RightVictor2 = new VictorSPX(4);
 
-  LeftVictor1.follow(LeftVictor2);
-  RightVictor1.follow(RightVictor2);
+  LeftVictor2.follow(LeftVictor1);
+  RightVictor2.follow(RightVictor1);
 
 }
 

@@ -16,17 +16,16 @@ import edu.wpi.first.wpilibj.Joystick;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-  public Joystick Driver = new Joystick(0);
-  public Joystick Driver2 = new Joystick(1);
+  public static Joystick Driver = new Joystick(0);
   public OI (){
 
   }
-  public Joystick getDriverJoystick(){
-    return Driver;
+  public double getDriverJoystick(){
+    return Driver.getRawAxis(1);
 
   }
-  public Joystick getDriver2Joystick(){
-    return Driver2;
+  public double getDriver2Joystick(){
+    return Driver.getRawAxis(5);
 
   }
   //// CREATING BUTTONS
